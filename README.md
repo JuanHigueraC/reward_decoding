@@ -41,16 +41,16 @@ Threee reward classification models (Ridge logistic regression, 5-Fold-CV) were 
 - Model 1: Model trained with **all features**
 ![image](https://user-images.githubusercontent.com/79924152/181862736-5ac5c900-ffb7-4c2f-8ec0-d77d763c7852.png)
 
-- Model 2: Model trained with **global features** (e.g. mean degree whole-brain network)
+- Model 2: Model trained with **global features** (e.g. mean degree of the whole-brain network)
 ![image](https://user-images.githubusercontent.com/79924152/181862831-95453344-79ca-4825-bc1b-d3bb7b6f329b.png)
 
-- Model 3: Model tained with **local features** (e.g. mean degree midbrain nodes)
+- Model 3: Model tained with **local features** (e.g. mean degree of the midbrain neurons)
 ![image](https://user-images.githubusercontent.com/79924152/181862838-6df2e601-f8ac-4e03-8337-b145200811d4.png)
 
 ## Results
 Both models trained with local and global variables achieved significant performance (_p_ < 0.001), according to a permutation analysis performed (_n_ permutations = 10000)
 ![image](https://user-images.githubusercontent.com/79924152/181863040-2887b222-990d-460b-a8db-0d96543f871a.png)
-**Figure 2.** Permutation analysis for model trained with local and global variables. Red dot line represents the perfromance achieved by ouy model, while in blue it is represented the distribution of the accuracies from permuted data.
+**Figure 2.** Permutation analysis for model trained with local and global variables. Red dot line represents the performance achieved by our model, while in blue it is represented the distribution of the accuracies from permuted data.
 
 ![image](https://user-images.githubusercontent.com/79924152/181863222-6ac93a4c-499a-4706-af71-d3742451f3fd.png)
 **Figure3.**  Forest plot in which it is represented 95% Confidence intervals of the logistic regression coefficients. In the x axis it is represented the CI. The more extreme this values, the better the predictors. Significant coefficients are shown in light blue.
